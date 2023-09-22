@@ -66,16 +66,29 @@
             
             
             <h1>Eliminar clientes</h1>
-            <p>Click en el botón para ver los clientes</p>
+            <p>Ingrese el id del cliente a eliminar</p>
             
             <form action="SvEliminar" method="POST">
                 <div class="mb-3">
                     <label class="form-label" for="id">
-                        Id de usuario
+                        Id de cliente
                     </label>
                     <input class="form-control" id="id" name="id_cliente" type="text" placeholder="Ingrese el id de usuario"/>
                 </div>
                 <button class="btn btn-outline-danger" type="submit" > Eliminar Cliente </button> 
+            </form>
+            
+            <h1>Editar clientes</h1>
+            <p>Ingrese el id del cliente a eliminar</p>
+            
+            <form action="SvEditar" method="GET">
+                <div class="mb-3">
+                    <label class="form-label" for="id">
+                        Id de cliente
+                    </label>
+                    <input class="form-control" id="id" name="id_clienteEdit" type="text" placeholder="Ingrese el id de usuario"/>
+                </div>
+                <button class="btn btn-outline-warning" type="submit" > Editar Cliente </button> 
             </form>
         </div>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>

@@ -38,6 +38,16 @@ public class ControladoraPersistencia {
             Logger.getLogger(ControladoraPersistencia.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
-    
-     
+
+    public Cliente traerCliente(int id_editar) {
+        return cliJPA.findCliente(id_editar);
+    }
+
+    public void editarCliente(Cliente cliente) {
+        try {
+            cliJPA.edit(cliente);
+        } catch (Exception ex) {
+            Logger.getLogger(ControladoraPersistencia.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }
 }
