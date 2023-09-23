@@ -18,8 +18,9 @@
         <!-- Page Heading -->
         <div class="d-sm-flex align-items-center justify-content-between mb-4">
             <h1 class="h3 mb-0 text-gray-800"></h1>
-            <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i
-                    class="fas fa-download fa-sm text-white-50"></i> Descargar</a>
+            <a href="DownloadCSVServlet" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm">
+                <i class="fas fa-download fa-sm text-white-50"></i> Descargar
+            </a>
         </div>
 
         <!-- Begin of Main Content -->
@@ -105,7 +106,7 @@
                                     <td><%= cli.getSaldo()%></td>
                                     <td style="display: flex; width: 230px;">
                                         <form name="eliminar" action="SvEliminar" method="POST">
-                                            <button type="submit" class="btn btn-danger btn-use btn-block" style="margin-right: 10px;">
+                                            <button type="submit" class="btn btn-danger btn-use btn-block" style="margin-right: 5px;">
                                                 <i class="fas fa-solid fa-trash"></i>Eliminar
                                             </button>
                                             <input type="hidden" id="id" name="id_cliente" value="<%=cli.getIdCliente()%>">
