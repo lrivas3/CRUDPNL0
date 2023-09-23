@@ -27,7 +27,7 @@ public class SvEditar extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         
-        int id_editar = Integer.parseInt(request.getParameter("id_clienteEdit"));
+        int id_editar = Integer.parseInt(request.getParameter("id"));
         
         Cliente cli = control.traerUsuario(id_editar);
         
@@ -70,7 +70,7 @@ public class SvEditar extends HttpServlet {
         
         control.editarCliente(cliente);
         
-        response.sendRedirect("index.jsp");
+        response.sendRedirect("SvClientes");
     }
 
   

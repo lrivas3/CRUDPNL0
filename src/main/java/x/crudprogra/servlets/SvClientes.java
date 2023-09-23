@@ -35,7 +35,7 @@ public class SvClientes extends HttpServlet {
         HttpSession misesion = request.getSession();
         misesion.setAttribute("listaClientes", listaClientes);
         
-        response.sendRedirect("mostrarClientes.jsp");
+        response.sendRedirect("gestionarCliente.jsp");
     }
 
     @Override
@@ -69,7 +69,7 @@ public class SvClientes extends HttpServlet {
         
         control.crearCliente(cliente);
         
-        response.sendRedirect("index.jsp");
+        response.sendRedirect("crearCliente.jsp");
 
     }
 

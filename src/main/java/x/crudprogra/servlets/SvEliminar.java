@@ -33,6 +33,8 @@ public class SvEliminar extends HttpServlet {
         int id_eliminar = Integer.parseInt(request.getParameter("id_cliente"));
         
         control.borrarCliente(id_eliminar);
+        
+        response.sendRedirect("SvClientes");
     }
 
     @Override
